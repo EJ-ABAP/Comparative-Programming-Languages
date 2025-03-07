@@ -10,3 +10,18 @@
     https://docs.brew.sh
 
 
+(base) LBCS40603dm:Eunjung You a.park$ clang++ -o SOE SOE.cpp
+SOE.cpp:21:60: error: expected ';' at end of declaration
+   21 |     std::chrono::duration<double, std::milli> total_elapsed{0}; // Total elapsed time in milliseconds
+      |                                                            ^
+      |                                                            ;
+SOE.cpp:24:9: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   24 |         auto start = std::chrono::high_resolution_clock::now();
+      |         ^
+SOE.cpp:28:9: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+   28 |         auto finish = std::chrono::high_resolution_clock::now();
+      |         ^
+2 warnings and 1 error generated.
+(base) LBCS40603dm:Eunjung You a.park$ 
+
+
