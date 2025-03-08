@@ -1,5 +1,7 @@
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Install Clang in Max OS 
 
+1. /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+2. brew install gcc
 ==> Next steps:
 - Run these commands in your terminal to add Homebrew to your PATH:
     echo >> /Users/a.park/.bash_profile
@@ -9,7 +11,8 @@
 - Further documentation:
     https://docs.brew.sh
 
-
+clang++ -o SOE SOE.cpp -std=c++11 
+[The below messages need to be set c++11 standard ] 
 (base) LBCS40603dm:Eunjung You a.park$ clang++ -o SOE SOE.cpp
 SOE.cpp:21:60: error: expected ';' at end of declaration
    21 |     std::chrono::duration<double, std::milli> total_elapsed{0}; // Total elapsed time in milliseconds
